@@ -1,8 +1,10 @@
 library(shiny)
 
-shinyUI(fluidPage(
+shinyUI(
+  navbarPage("My application!",
+            
   
-  titlePanel("Cooking European Recipes in the US"),
+tabPanel("Cooking European Recipes in the US",
   
   sidebarLayout(
     sidebarPanel("Recipe Measurement Conversions",
@@ -23,6 +25,14 @@ shinyUI(fluidPage(
       h4("Author: Sarah Cooper"), 
       dataTableOutput('table'),
       img(src='myImage.jpg', align = "right")
+       )
     )
-  )
-))
+  ),
+    tabPanel("How to use app",
+      mainPanel( includeMarkdown ("mdf.Rmd")
+      
+      )
+    )
+)
+)
+

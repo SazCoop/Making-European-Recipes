@@ -1,0 +1,30 @@
+---
+title: "User Quide"
+output: html_document
+
+---
+
+Shiny Application makes the conversions painless when cooking European Recipes in Europe
+
+Here are the calcualtions:
+$$
+LiquidCups = \frac{Millitres}{236.588}
+$$
+ 
+$$
+Cups = \frac{Grams}{236.588}
+$$
+
+$$
+Ounces = \frac{Grams}{28.35}
+$$
+
+**Slider exist to give reactive results**
+
+1. Enter information in grams and milletres
+
+2. Results can be selected: Ounces, Cups and Cups LQ
+
+3. Can ADD entries and download
+
+The data table adds additional flexibilty
